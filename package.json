@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jest --no-cache"
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!test-component).+\\.js$"
+    ]
+  },
   "author": "Jamie Woolgar <jamie@jamiewoolgar.net>",
   "license": "ISC",
   "devDependencies": {
@@ -22,6 +27,7 @@
   },
   "dependencies": {
     "react": "^15.4.2",
+    "test-component": "file:test-component",
     "webpack": "^2.2.1"
   }
 }

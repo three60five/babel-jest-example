@@ -1,5 +1,5 @@
 import React from 'react';
-import testComponent from 'test-component/test-component.js';
+import testComponent from 'test-component';
 
 export default {
 	exampleString: 'a string'
